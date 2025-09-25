@@ -1,0 +1,32 @@
+*{box-sizing:border-box}body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;color:#111;background:#f7f7fb}a{color:inherit}img{max-width:100%;display:block}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+.site-header{background:#0b57d0;color:white;padding:.6rem 0;position:sticky;top:0;z-index:10}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.25rem;margin:0}
+.nav a{color:white;margin-left:1rem;text-decoration:none}
+.hero{background:linear-gradient(90deg,#e8f0ff,#ffffff);padding:2rem;border-radius:8px;margin:1rem 0;text-align:center}
+.hero h2{margin:0 0 .5rem;font-size:1.6rem}
+.btn{display:inline-block;padding:.6rem .9rem;border-radius:8px;background:#0b57d0;color:white;border:none;cursor:pointer;text-decoration:none}
+.btn-outline{background:transparent;border:1px solid #0b57d0;color:#0b57d0}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.2rem 0}
+.product-card{background:white;border-radius:10px;padding:0;box-shadow:0 6px 18px rgba(20,20,50,.06);overflow:hidden;display:flex;flex-direction:column;min-height:320px}
+.product-image{height:180px;object-fit:cover;background:#f3f4f9}
+.product-body{padding:1rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.product-title{margin:.2rem 0;font-size:1.05rem}
+.product-price{font-weight:700;color:#0b57d0;margin-top:auto}
+.product-actions{display:flex;gap:.6rem;margin-top:.6rem}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;padding:1rem}
+.modal.hidden{display:none}
+.modal-panel{background:white;border-radius:10px;max-width:720px;width:100%;padding:1rem;position:relative}
+.modal-close{position:absolute;right:.6rem;top:.4rem;border:none;background:transparent;font-size:1.2rem;cursor:pointer}
+.site-footer{padding:1.2rem 0;text-align:center;color:#6b7280;background:transparent;margin-top:2rem}
+.checkout .order-form{display:grid;gap:.75rem;background:white;padding:1rem;border-radius:8px;box-shadow:0 6px 18px rgba(20,20,50,.06)}
+.order-form label{display:block;gap:.4rem}
+.order-form input{width:100%;padding:.5rem;border:1px solid #e6e9f0;border-radius:6px;margin-top:.25rem}
+.cart-item{display:flex;gap:.8rem;align-items:center;padding:.5rem 0;border-bottom:1px dashed #eee}
+.cart-item img{width:64px;height:64px;border-radius:8px;flex-shrink:0}
+.cart-meta{flex:1}
+.qty-controls{display:flex;gap:.5rem;align-items:center}
+.small{font-size:.9rem;color:#6b7280}
+.hidden{display:none}
+@media (max-width:600px){.header-inner{flex-direction:column;gap:.6rem}.hero h2{font-size:1.2rem}}

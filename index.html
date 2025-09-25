@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Store - Магазин техники</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Smart Store</h1>
+      <nav class="nav">
+        <a href="#products">Каталог</a>
+        <a href="#about">О магазине</a>
+        <a href="checkout.html" id="cart-link">Корзина (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Лучшие гаджеты - iPhone, MacBook, AirPods и аксессуары</h2>
+      <p>Красиво. Быстро. Надежно. Твой персональный Smart Store.</p>
+      <a href="#products" class="btn">Перейти в каталог</a>
+    </section>
+
+    <section id="products" class="products-grid">
+      <!-- Продукты будут подгружены скриптом -->
+    </section>
+
+    <section id="about" class="about">
+      <h3>О магазине</h3>
+      <p>Мы — SmartStore. Здесь вы найдёте всё, что нужно для удобной и современной жизни. У нас только качественные товары, выгодные цены и сервис, который всегда рядом. SmartStore — умный выбор для умных людей!</p>
+    </section>
+  </main>
+
+  <template id="product-card-template">
+    <article class="product-card">
+      <img class="product-image" alt="product">
+      <div class="product-body">
+        <h4 class="product-title"></h4>
+        <p class="product-price"></p>
+        <div class="product-actions">
+          <button class="btn btn-outline details-btn">Подробнее</button>
+          <button class="btn buy-btn">Купить</button>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Закрыть">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Smart Store - магазин техники</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Оформление заказа - Smart Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Smart Store</h1>
+      <nav class="nav">
+        <a href="index.html">Каталог</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container checkout">
+    <h2>Оформление заказа</h2>
+    <div id="cart-area">
+      <!-- Корзина отрисуется скриптом -->
+    </div>
+
+    <form id="order-form" class="order-form">
+      <h3>Данные для доставки</h3>
+      <label>Имя
+        <input name="name" required>
+      </label>
+      <label>Телефон
+        <input name="phone" required>
+      </label>
+      <label>Адрес доставки
+        <input name="address" required>
+      </label>
+      <div class="pay-area">
+        <h3>Оплата</h3>
+      
+        <button type="submit" class="btn">Подтвердить заказ</button>
+      </div>
+    </form>
+
+    <div id="order-result" class="order-result hidden"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Smart Store - интернет магазин.</p>
+    </div>
+  </footer>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
